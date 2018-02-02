@@ -117,13 +117,13 @@ PileupImageEncoderNative::PileupImageEncoderNative(
 int PileupImageEncoderNative::BaseColor(char base) const {
   switch (base) {
     case 'A': return (options_.base_color_offset_a_and_g() +
-                      options_.base_color_stride() * 3);
-    case 'G': return (options_.base_color_offset_a_and_g() +
-                      options_.base_color_stride() * 2);
-    case 'T': return (options_.base_color_offset_t_and_c() +
-                      options_.base_color_stride() * 1);
-    case 'C': return (options_.base_color_offset_t_and_c() +
                       options_.base_color_stride() * 0);
+    case 'G': return (options_.base_color_offset_a_and_g() +
+                      options_.base_color_stride() * 1);
+    case 'T': return (options_.base_color_offset_t_and_c() +
+                      options_.base_color_stride() * 2);
+    case 'C': return (options_.base_color_offset_t_and_c() +
+                      options_.base_color_stride() * 3);
     default: return 0;
   }
 }
