@@ -128,7 +128,7 @@ int PileupImageEncoderNative::BaseColor(char base) const {
     case 'C': return 50;
 //    return (options_.base_color_offset_t_and_c() +
 //                      options_.base_color_stride() * 0);
-    default: return 0;
+    default: return 0; 
   }
 }
 
