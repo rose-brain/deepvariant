@@ -60,8 +60,8 @@ def default_options(read_requirements=None):
 
   return deepvariant_pb2.PileupImageOptions(
       reference_band_height=5,
-      base_color_offset_a_and_g=40,
-      base_color_offset_t_and_c=30,
+      base_color_offset_a_and_g=25,
+      base_color_offset_t_and_c=15,
       base_color_stride=70,
       allele_supporting_read_alpha=1.0,
       allele_unsupporting_read_alpha=0.6,
@@ -73,7 +73,7 @@ def default_options(read_requirements=None):
       positive_strand_color=70,
       negative_strand_color=240,
       base_quality_cap=40,
-      mapping_quality_cap=60,
+      mapping_quality_cap=70,
       height=100,
       width=221,
       read_overlap_buffer_bp=5,
